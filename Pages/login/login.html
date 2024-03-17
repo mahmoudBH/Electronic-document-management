@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Gestion électronique du document</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="login.php" method="post">
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registeration</span>
+                <input type="text" placeholder="Full Name" name="full_name">
+                <input type="email" placeholder="Email" name="email">
+                <input type="number" placeholder="Mobile No." name="mobile">
+                <select name="service" required>
+                    <option disabled selected>Sélectionnez le service traitant</option>
+                    <option value="Service des Opérations Bancaires">Service des Opérations Bancaires</option>
+                    <option value="Service des Prêts et du Crédit">Service des Prêts et du Crédit</option>
+                    <option value="Service des Finances et de la Comptabilité">Service des Finances et de la Comptabilité</option>
+                    <option value="Service des Investissements">Service des Investissements</option>
+                    <option value="Service de la Conformité et de la Réglementation">Service de la Conformité et de la Réglementation</option>
+                    <option value="Service de la Gestion des Risques">Service de la Gestion des Risques</option>
+                    <option value="Service de la Relation Client">Service de la Relation Client</option>
+                    <option value="Service des Ressources Humaines">Service des Ressources Humaines</option>
+                    <option value="Service de la Technologie de l Information (TI)">Service de la Technologie de l'Information (TI)</option>
+              </select>
+                <input type="password" placeholder="Password" name="password">
+                <button type="submit" name="sign-up">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="login.php" method="post">
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email password</span>
+                <input type="email" placeholder="Email" name="email">
+                <input type="password" placeholder="Password" name="password">
+                <a href="#">Forget Your Password?</a>
+                <button type="submit" name="login">Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
